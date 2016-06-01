@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd $(dirname $0)
+
 if [ -d vertex-theme ]
 then
     (
@@ -33,6 +35,7 @@ fakeroot checkinstall \
     --pkgarch=all \
     --pkgsource="https://github.com/horst3180/vertex-theme" \
     --provides=vertext-theme \
+    --maintainer="Ildar Akhmetgaleev \<akhilman@gmail.com\>" \
     --nodoc  \
     --default \
     make install
