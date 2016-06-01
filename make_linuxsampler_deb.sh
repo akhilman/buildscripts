@@ -29,6 +29,9 @@ cd $WD/linuxsampler
 echo \$ sudo dpkg -i libgig*.deb 
 sudo dpkg -i libgig*.deb || exit $1
 
+echo \$ sudo dpkg -i gigtools*.deb 
+sudo dpkg -i gigtools*.deb || exit $1
+
 ################ linuxsampler ##########
 
 if [ -d linuxsampler ]
