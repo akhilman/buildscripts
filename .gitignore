@@ -1,0 +1,6 @@
+# ignore everything
+*
+
+# but
+!.gitignore
+!make_*.sh
