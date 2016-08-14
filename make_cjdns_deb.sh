@@ -11,7 +11,7 @@ then
 fi
 
 cd $(dirname $0)
-mkdir cjdns; cd cjdns
+mkdir -p cjdns; cd cjdns
 
 if [ -x cjdns ]
 then
